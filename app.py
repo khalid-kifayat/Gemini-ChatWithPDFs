@@ -73,7 +73,7 @@ def user_input(user_question):
 
 def main():
     st.set_page_config("Chat PDF")
-    st.header("Chat with PDF using Gemini💁")
+    st.header("Chat with PDF's using Gemini-Pro Model💁")
 
     user_question = st.text_input("Ask a Question from the PDF Files")
 
@@ -93,3 +93,25 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+
+
+st.markdown("---")
+st.caption("using Google Gemini Pro, Python-Langchain Application created by Khalid kifayat :sunglasses:")
+
+hide_streamlit_style = """
+            <style>
+
+            [data-testid="stToolbar"] {visibility: hidden;}
+            .reportview-container {
+            margin-top: -2em;
+        }
+            #MainMenu {visibility: hidden;}
+            .stDeployButton {display:none;}
+            #stDecoration {display:none;}
+            footer {visibility: hidden;}
+            div.embeddedAppMetaInfoBar_container__DxxL1 {visibility: hidden;}
+            header {visibility: hidden;}
+            </style>
+            """
+st.markdown(hide_streamlit_style, unsafe_allow_html=True) 
